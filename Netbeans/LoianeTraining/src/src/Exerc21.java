@@ -7,7 +7,7 @@ public class Exerc21 {
         Scanner fuel = new Scanner(System.in);
         
         float G = 2.5f;
-        float E = 1.9f, desconto = 0, valorPagoi = 0, valorPagof = 0; 
+        float E = 1.9f, desconto = 0f, valorPagoi = 0f, valorPagof = 0f; 
         
         System.out.println("Informe qual produto deseja:");
         System.out.println("(G)Gasolina (E)Etanol");
@@ -30,7 +30,7 @@ public class Exerc21 {
                     else if(quant > 20){
                        desconto = ((valorPagoi)/100)*6;
                     }    
-                    System.out.println(" Gasolina "+"R$"+G);
+                    System.out.println("Gasolina "+"R$"+G);
                     break;
 
                 case "e": case "E":
@@ -41,7 +41,7 @@ public class Exerc21 {
                     else if(quant > 20){
                         desconto = ((valorPagoi)/100)*5;
                     }
-                    System.out.println(" Etanol " + "R$"+E);
+                    System.out.println("Etanol " + "R$"+E);
                     break;
             }
             valorPagof = valorPagoi-desconto;

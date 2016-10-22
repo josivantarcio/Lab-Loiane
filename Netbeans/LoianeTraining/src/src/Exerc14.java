@@ -23,11 +23,10 @@ public class Exerc14 {
             conceito = 'C';
         else if (media >= 4 && media <6)
             conceito = 'D';
-        else 
+        else //de 3,9 até 0
             conceito = 'E';
         
-       // System.out.println("Nota 1: "+nt1);
-       // System.out.println("Nota 2: "+nt2);
+    
         System.out.println("---------------------");
         System.out.println("Média : "+media);
         System.out.println("Aluno com Conceito: "+conceito);

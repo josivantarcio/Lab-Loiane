@@ -99,8 +99,8 @@ public class Exerc23 {
         System.out.println("+ "+tipoCarne+"        "+quantCarne+"                      "+totalCompra+"");
         System.out.println("+                                                 ");
         System.out.println("+-------------------------------------------------");
-        System.out.println("+                                 desconto(-)"+desconto+"  ");
-        System.out.println("+FORMA DE PAGAMENTO:........................."+tipoPgto+"  ");
-        System.out.println("+TOTAL A PAGAR..............................:"+valorPagar+"  ");
+        System.out.println("+                                 desconto(-)"+desconto);
+        System.out.println("+FORMA DE PAGAMENTO:................"+tipoPgto);
+        System.out.println("+TOTAL A PAGAR..............................:"+valorPagar);
     }
 }

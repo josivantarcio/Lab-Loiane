@@ -5,36 +5,36 @@ import java.util.Scanner;
 public class Exerc20 {
     public static void main(String[] args){
         Scanner ask = new Scanner(System.in);
-        System.out.println("Responda as pergundas com '1'SIM e '0'NÃO");
+        System.out.println("Responda as pergundas com 'S'SIM e 'N'NÃO");
         
         int alibi=0;
         
-        System.out.println("PERGUNTA 1 : Telefonou para a vítima? '1'SIM e '0'NÃO");
-            int perg1 = ask.nextInt();
-            if(perg1 == 1)
-            alibi = alibi+1;
+        System.out.println("PERGUNTA 1 : Telefonou para a vítima? 'S'SIM e 'N'NÃO");
+            String perg1 = ask.next();
+            if(perg1.equalsIgnoreCase("S"))
+           alibi++;
         
-        System.out.println("PERGUNTA 2 : Esteve no Local do Crime? '1'SIM e '0'NÃO");
-            int perg2 = ask.nextInt();
-            if(perg2 == 1)
-            alibi = alibi+1;
+        System.out.println("PERGUNTA 2 : Esteve no Local do Crime? 'S'SIM e 'N'NÃO");
+            String perg2 = ask.next();
+            if(perg2.equalsIgnoreCase("S"))
+           alibi++;
         
-        System.out.println("PERGUNTA 3 : Mora Perto da vítima '1'SIM e '0'NÃO");
-            int perg3 = ask.nextInt();
-            if (perg3 ==  1)
-            alibi = alibi+1;
+        System.out.println("PERGUNTA 3 : Mora Perto da vítima 'S'SIM e 'N'NÃO");
+            String perg3 = ask.next();
+            if (perg3.equalsIgnoreCase("S"))
+           alibi++;
             
-        System.out.println("PERGUNTA 4 : Devia para a vítima? '1'SIM e '0'NÃO");
-            int perg4 = ask.nextInt();
-            if(perg4 == 1)
-            alibi = alibi+1;
+        System.out.println("PERGUNTA 4 : Devia para a vítima? 'S'SIM e 'N'NÃO");
+            String perg4 = ask.next();
+            if(perg4.equalsIgnoreCase("S"))
+           alibi++;
         
-        System.out.println("PERGUNTA 5 : Já Trabalhou com a vítima? '1'SIM e '0'NÃO");
-            int perg5 = ask.nextInt();
-            if (perg5 ==  1)
-            alibi = alibi+1;
+        System.out.println("PERGUNTA 5 : Já Trabalhou com a vítima? 'S'SIM e 'N'NÃO");
+            String perg5 = ask.next();
+            if (perg5.equalsIgnoreCase("S"))
+           alibi++;
             
-        System.out.println("alibi nr"+alibi);
+        System.out.println("alibi nr "+alibi);
         
         switch (alibi){
             case 2: 
@@ -48,7 +48,7 @@ public class Exerc20 {
             break;
             default:
                 System.out.println("INOCENTE");
-                
+               
         }
     }
 }
