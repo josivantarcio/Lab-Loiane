@@ -12,11 +12,12 @@ public class Exerc06 {
         int n2 = ss.nextInt();
         int n3 = ss.nextInt();
         
-        if (n1>n2 && n1>n3)
-            System.out.println(n1 + " é o Maior");
-        else if (n2>n1 && n2>n3)
-            System.out.println(n2 + " é o Maior");
-        else
-            System.out.println(n3+ " é o Maior");
+        if (n1>=n2 && n1>=n3)
+            System.out.println(n1 + " n1 é o Maior");
+        else if (n2>=n1 && n2>=n3)
+            System.out.println(n2 + " n2 é o Maior");
+        else if (n1<=n3 && n2<=n3)
+            System.out.println(n3+ " n3 é o Maior");
+        
     }
 }

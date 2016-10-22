@@ -30,7 +30,7 @@ public class Exerc11 {
        
         System.out.println("Salário Antes do reajuste....: " + salario);
         System.out.println("Percentual Aplicado..........: " + p + "%");
-        System.out.println("Valor do Aumento.............: " + ((salario/100)*p));
+        System.out.println("Valor do Aumento.............: " +(salario/100)*p);
         System.out.println("Salário Ajustado para........: " + salarioAtual);
         
     }

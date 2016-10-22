@@ -30,6 +30,14 @@ public class Exerc08 {
                 System.out.println(pr3+" É o Menor Preço.");
         else
             System.out.println(pr1+ " É o Menor Preço.");
+        
+        if(pr1<pr2 || pr1<pr3)
+            if(pr2>pr1 && pr2>pr3)
+                System.out.println(pr2+" É o Maior Preço.");
+            else
+                System.out.println(pr3+" É o Maior Preço.");
+        else
+            System.out.println(pr1+ " É o Maior Preço.");
             
     }
     

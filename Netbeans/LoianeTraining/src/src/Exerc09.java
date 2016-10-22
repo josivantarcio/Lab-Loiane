@@ -10,16 +10,25 @@ public class Exerc09 {
         int a2 = scan.nextInt();
         int a3 = scan.nextInt();
         
-        //===================  ERRO =================
-        //@
-                
+        //DECRESCENTE
+        //01
+        //a1 a2 a3
         if((a1>a2 && a1>a3)&&(a2>a3))
             System.out.println("A ordem é: "+a1+" > "+a2+ " > "+a3);
-        else if ((a3>a1 && a3>a2)&&(a2>a1))
-            System.out.println("A ordem é: "+a3+" > "+a2+ " > "+a1);
+        //a1 a3 a2
+        else if ((a1>a3 && a1>a2)&&(a3>a2))
+            System.out.println("A ordem é: "+a1+" > "+a3+ " > "+a2);
+        //a2 a1 a3
         else if((a2>a1 && a2>a3)&&(a1>a3))
             System.out.println("A ordem é: "+a2+" > "+a1+ " > "+a3);
-        else
+        //a2 a3 a1
+        else if((a2>a1 && a2>a3)&&(a1<a3))
             System.out.println("A ordem é: "+a2+" > "+a3+ " > "+a1);
+        //a3 a1 a2
+        else if((a3>a1 && a2<a3)&&(a1>a2))
+            System.out.println("A ordem é: "+a3+" > "+a1+ " > "+a2);
+        //a3 a2 a1
+        else//((a3>a1 && a3>a2)&&(a2>a1))
+            System.out.println("A ordem é: "+a3+" > "+a2+ " > "+a1);
     }
 }

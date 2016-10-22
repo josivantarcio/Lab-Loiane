@@ -8,16 +8,23 @@ public class Exerc04 {
         System.out.println("Pressione um botão..");
         String lt = scan.next();
         
-        switch (lt){
-                case "A": case "a":
-                case "E": case "e":
-                case "I": case "i":
-                case "O": case "o":
-                case "U": case "u":
-                    System.out.println("Vogal");break;
-                default:
-                    System.out.println("Consoante");
-        }
-            
-    }
+            if(lt.length()==1){
+                switch (lt){
+                        case "A": case "a":
+                        case "E": case "e":
+                        case "I": case "i":
+                        case "O": case "o":
+                        case "U": case "u":
+                            System.out.println("Vogal");break;
+                        default:
+                            System.out.println("Consoante");
+                }
+            }
+            else{    
+                    System.out.println("Repita a Operação.");
+            }        
+    }                
 }
+    
+
+
