@@ -4,11 +4,13 @@
  * and open the template in the editor.
  */
 package Aula17;
-
+import java.util.Scanner;
 /**
  *
  * @author Josevan
  */
 public class Exerc01 {
-    
+    public static void main(String[] args) {
+        System.out.println("");
+    }
 }
