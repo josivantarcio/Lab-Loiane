@@ -8,7 +8,7 @@ Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapass
 receberá ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler 
 a quantidade (em Kg) de morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.
  */
-package src;
+package Aula15;
 
 import java.util.Scanner;
 
