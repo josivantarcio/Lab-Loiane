@@ -10,15 +10,15 @@ import java.util.Scanner;
  */
 public class Exerc02 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         int tentar=0;
         String login, key;
         do{
         System.out.print("Digite seu login:");
-        login = scan.next();
+        login = input.next();
         
         System.out.print("Digite sua senha: ");
-        key = scan.next();
+        key = input.next();
         
             if(!(key.equals(login))){
                 System.out.println("Seja bem Vindo "+login);
