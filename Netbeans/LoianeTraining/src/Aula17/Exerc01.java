@@ -11,6 +11,22 @@ import java.util.Scanner;
  */
 public class Exerc01 {
     public static void main(String[] args) {
-        System.out.println("");
+        Scanner scan = new Scanner(System.in);
+        int i; //flag
+        
+        do{
+            System.out.println("Digite uma nota: ");
+            int nota = scan.nextInt();
+      
+            if(nota >= 0 && nota <=10){
+                i=2;
+                System.out.println("Valor: "+nota);
+                
+            }else{
+                System.out.println(nota+" valor invalido, repita a operação!");
+                i=3;
+            }
+        }
+        while(i!=2);
     }
 }

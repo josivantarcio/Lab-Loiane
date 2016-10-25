@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e 
+ * continue pedindo até que o usuário informe um valor válido. 
  */
 package Aula17;
 import java.util.Scanner;
@@ -11,6 +10,9 @@ import java.util.Scanner;
  */
 public class Exerc10 {
     public static void main(String[] args) {
-        System.out.println("");
+        Scanner scan = new Scanner(System.in);
+        
+        
+        
     }
 }
