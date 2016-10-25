@@ -13,6 +13,7 @@ public class Exerc02 {
         Scanner input = new Scanner(System.in);
         int tentar=0;
         String login, key;
+        
         do{
         System.out.print("Digite seu login:");
         login = input.next();
