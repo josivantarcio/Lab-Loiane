@@ -1,8 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Faça um programa que leia 5 números e informe a soma e a média dos números. 
+ 
 package Aula17;
 import java.util.Scanner;
 /**
@@ -11,6 +8,17 @@ import java.util.Scanner;
  */
 public class Exerc08 {
     public static void main(String[] args) {
-        System.out.println("");
+        Scanner up = new Scanner(System.in);
+        
+        int numero = 0, cont=0;
+        int i = 1;
+        for (;i<=5;i++){
+            System.out.println("Digite o nr"+i);
+            numero = up.nextInt();
+            
+            cont += numero;
+        }
+        System.out.println("(+)" +cont);
+        System.out.println("media:" +(cont/(i-1)));
     }
 }
