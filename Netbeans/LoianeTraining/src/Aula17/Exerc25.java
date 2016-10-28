@@ -68,10 +68,11 @@ public class Exerc25 {
             
             
             System.out.println("Total.............: R$"+somaPreco);
-            
+                
+                String formaPgto;
                 do{    
                 System.out.println("Forma de Pagamento D-Dinheiro C-Cartão X-Cheque V-Vale");
-                String formaPgto = scan.next();
+                formaPgto = scan.next();
                     switch(formaPgto){
                         case "D": case "d": System.out.println("Forma de Pagamento........: Dinheiro");fPgto=false;break;
                         case "C": case "c": System.out.println("Forma de Pagamento........: Cartão");fPgto=false;break;
