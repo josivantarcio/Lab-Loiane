@@ -11,7 +11,6 @@ public class Exercicio5 {
 	private static Scanner scan = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		
 
 		String[][][] compromissos = new String[12][31][24];
 		byte opcao;
@@ -38,7 +37,6 @@ public class Exercicio5 {
 				hora = verificaHora(horaValida);
 
 				compromissos[mes][dia][hora] = JOptionPane.showInputDialog("Digite o Compromisso! ");
- 
 				break;
 
 			case 2: // Verificar Compromisso
@@ -56,7 +54,6 @@ public class Exercicio5 {
 				} else {
 					System.out.print("Compromisso: " + compromissos[mes][dia][hora]);
 				}
-
 				break;
 				
 			case 3:
@@ -79,9 +76,7 @@ public class Exercicio5 {
 				
 			default:
 				System.out.println("\n*** Opção Invalida! Tente Novamente ***");
-
 			}
-			
 		}
 		System.out.println("FIM");
 		scan.close();
@@ -103,14 +98,13 @@ public class Exercicio5 {
 	private static int verificaDia(boolean bol) {
 		
 		while (!bol) {
-			System.out.print(">> Digite o Dia do Mês: ");
+			System.out.print(">> Digite o Dia do Mês "+dia+": ");
 			dia = scan.nextInt();
 			if (dia > 0 && dia <= 31) {
 				bol = true;
 			}
 		}
 		return dia;
-		
 	}
 	
 	private static int verificaHora(boolean bol) {
@@ -123,5 +117,4 @@ public class Exercicio5 {
 		}
 		return hora;
 	}
-
 }
