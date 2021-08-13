@@ -2,7 +2,10 @@ package labs.matrizes;
 
 import java.util.Scanner;
 
-public class Exercicio4 { 
+import javax.swing.JOptionPane;
+
+public class Exercicio5 { 
+	private static int mes = 0;
 	private static int dia = 0;
 	private static int hora = 0;
 	private static Scanner scan = new Scanner(System.in);
@@ -10,7 +13,7 @@ public class Exercicio4 {
 	public static void main(String[] args) {
 		
 
-		String[][] compromissos = new String[31][24];
+		String[][][] compromissos = new String[12][31][24];
 		byte opcao;
 		boolean flag = false;
 		
@@ -19,36 +22,39 @@ public class Exercicio4 {
 			System.out.println();
 			System.out.println(" === Digite 1 para add compromisso\n "
 					+ "=== Digite 2 para verificar compromisso.\n "
-					+ "=== Digite 3 para sair.\n"
+					+ "=== Digite 3 para sair.\n "
 					+ "=== Digite 4 para Agenda Completa.");
 
 			opcao = scan.nextByte();
 
 			switch (opcao) {
 			case 1: // Adicionar Compromisso
+				boolean mesValido = false;
 				boolean diaValido = false;
 				boolean horaValida = false;
 				
+				mes = verificaMes(mesValido);
 				dia = verificaDia(diaValido);
 				hora = verificaHora(horaValida);
 
-				System.out.println(">> Digite o Compromisso: ");
-				compromissos[dia][hora] = scan.next();
-
+				compromissos[mes][dia][hora] = JOptionPane.showInputDialog("Digite o Compromisso! ");
+ 
 				break;
 
 			case 2: // Verificar Compromisso
  
+				mesValido = false;
 				diaValido = false;
 				horaValida = false;
 
+				mes = verificaMes(mesValido);
 				dia = verificaDia(diaValido);
 				hora = verificaHora(horaValida);
 								
-				if (compromissos[dia][hora] == null) {
-					System.out.println("Não Existe Compromisso nesse DIA e HORA !!!!");
+				if (compromissos[mes][dia][hora] == null) {
+					System.out.println("Não Existe Compromisso nesse MES e DIA e HORA !!!!");
 				} else {
-					System.out.print("Compromisso: " + compromissos[dia][hora]);
+					System.out.print("Compromisso: " + compromissos[mes][dia][hora]);
 				}
 
 				break;
@@ -61,12 +67,14 @@ public class Exercicio4 {
 				System.out.println(" COMPROMISSOS AGENDADOS ");
 				for (int i = 0; i < compromissos.length; i++) {
 					for (int j = 0; j < compromissos[i].length; j++) {
-						if (compromissos[i][j] != null) {
-							System.out.print("Dia: " + i + " - Hora: " + j + " = ");
-							System.out.println(compromissos[i][j].toUpperCase());
+						for(int k = 0; k < compromissos[i][j].length; k++) {
+							if (compromissos[i][j][k] != null) {
+								System.out.print("Mês: " + i +" - Dia: " + j + " - Hora: " + k + " = ");
+								System.out.println(compromissos[i][j][k].toUpperCase()); 
+							}
 						}
-					}
-				}
+					} 
+				} 
 				break;
 				
 			default:
@@ -77,6 +85,19 @@ public class Exercicio4 {
 		}
 		System.out.println("FIM");
 		scan.close();
+	}
+	
+	private static int verificaMes(boolean bol) {
+		
+		while (!bol) {
+			System.out.print(">> Digite o Mês: ");
+			mes = scan.nextInt();
+						
+			if (mes >=1 && mes <=12) {
+				bol = true;
+			}
+		}
+		return mes;
 	}
 	
 	private static int verificaDia(boolean bol) {
