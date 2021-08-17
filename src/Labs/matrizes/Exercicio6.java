@@ -1,4 +1,4 @@
-package labs.matrizes;
+package Labs.matrizes;
 
 import java.util.Scanner;
 
@@ -30,8 +30,10 @@ public class Exercicio6 {
 				System.out.print("Coluna: ");
 				coluna = scan.nextByte();
 				coluna = lance(coluna);
-
-				jogoVelha[linha][coluna] = jogador1;
+				
+				
+					jogoVelha[linha][coluna] = jogador1;
+			
 
 			} else {
 				System.out.println("Jogador Nº 2 Joga [O]");
@@ -43,8 +45,9 @@ public class Exercicio6 {
 				coluna = scan.nextByte();
 				coluna = lance(coluna);
 
-				jogoVelha[linha][coluna] = jogador2;
-
+				
+					jogoVelha[linha][coluna] = jogador2;
+				
 			}
 
 			tabela(jogoVelha);

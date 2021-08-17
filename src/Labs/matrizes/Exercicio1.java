@@ -1,4 +1,4 @@
-package labs.matrizes;
+package Labs.matrizes;
 
 import java.util.Random;
 
