@@ -1,6 +1,6 @@
 package Labs.poo;
 
-public class Master {
+public class MatrizContaCorrente {
 
 	public static void main(String[] args) {
 		
