@@ -14,6 +14,8 @@ public class JogoDaVelha {
 	Scanner scan = new Scanner(System.in);
 
 	// Verifica quem será o jogador autorizado para jogar.
+	// Recebe um contator do tipo byte
+	// Retorna: um char. valor X ou O para a matriz.
 	char verificarVezJogador(byte jogadas) {
 		if (jogadas % 2 == 0) {
 			System.out.println("Jogador Nº 1 Joga [X]");
@@ -97,5 +99,4 @@ public class JogoDaVelha {
 		} 
 		return fimDeJogo;
 	}
-
 }
