@@ -22,13 +22,11 @@ public class Aluno {
 		}
 		System.out.println();
 		System.out.println("===============================");
+		System.out.println("ALUNO: "+nome);
+		System.out.println("Matricula: "+matricula);
 		if(d >= disciplinas.length) {
-			System.out.println("ALUNO: "+nome);
-			System.out.println("Matricula: "+matricula);
 			System.out.println("Foi Aprovado no Curso de "+curso);
 		}else {
-			System.out.println("ALUNO: "+nome);
-			System.out.println("Matricula: "+matricula);
 			System.out.println("Foi Reprovado no Curso de "+curso);
 		}
 
