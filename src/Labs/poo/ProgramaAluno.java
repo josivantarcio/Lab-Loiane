@@ -2,7 +2,7 @@ package Labs.poo;
 
 import java.util.Scanner;
 
-public class MatrizAluno {
+public class ProgramaAluno {
 
 	public static void main(String[] args) {
 		//Exercicio 3 - Aula 25
