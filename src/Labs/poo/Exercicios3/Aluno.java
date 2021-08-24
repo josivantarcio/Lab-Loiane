@@ -80,9 +80,11 @@ public class Aluno {
 
 	public void alunoAprovado() {
 		int aprovado = 0;
+		double media;
+		double soma;
 		for (int i = 0; i < getDisciplina().length; i++) {
-			double media = 0;
-			double soma = 0;
+			media = 0;
+			soma = 0;
 			for (int j = 0; j < getNotas()[i].length; j++) {
 				soma += getNotas()[i][j];
 			}
