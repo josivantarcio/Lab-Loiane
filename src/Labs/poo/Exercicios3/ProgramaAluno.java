@@ -17,14 +17,11 @@ public class ProgramaAluno {
 		String curso = scan.next();
 
 		Aluno aluno = new Aluno(nome, matricula, curso);
+		
 
-		for (int i = 0; i < aluno.getDisciplina().length; i++) {
-			for(int j = 0; j < aluno.getDisciplina()[i].length; j++) {
-				
-			}
-			
-		}
+		aluno.cadastrarDisciplinasNotas();
+		aluno.mostrarDadosAluno();
+
 
 	}
-
 }
