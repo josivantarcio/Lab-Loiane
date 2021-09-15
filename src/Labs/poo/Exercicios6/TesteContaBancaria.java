@@ -2,15 +2,21 @@ package Labs.poo.Exercicios6;
 
 public class TesteContaBancaria {
 	public static void main(String[] args) {
-		ContaBancaria cb = new ContaPoupanca();
+		ContaPoupanca cb = new ContaPoupanca();
 		cb.setNomeCliente("Amarildo");
 		cb.setNumConta(12544);
 		cb.setSaldo(0);
 		cb.depositar(100);
+		cb.setDiaRendimento(15);
+		
 		System.out.println(cb);
-		realizarSaque(cb, 50);
-		realizarSaque(cb, 70);
+		cb.calcularNovoSaldo(0.10);
+		realizarSaque(cb, 85);
 		System.out.println(cb);
+		
+		ContaEspecial ce = new ContaEspecial();
+		ce.setLimite(100);
+		ce.sacar(300);
 		
 	}
 	

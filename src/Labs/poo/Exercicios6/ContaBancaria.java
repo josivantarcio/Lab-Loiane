@@ -1,6 +1,6 @@
 package Labs.poo.Exercicios6;
 
-public abstract class ContaBancaria {
+public class ContaBancaria {
 	private String nomeCliente;
 	private int numConta;
 	private double saldo;
