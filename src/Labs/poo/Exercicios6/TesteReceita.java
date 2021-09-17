@@ -8,13 +8,17 @@ public class TesteReceita {
 		ContribuinteCpf pf = new ContribuinteCpf();
 		Scanner scan = new Scanner(System.in);
 	
-		pj.setNome("industrias xxxx");
+		pj.setNome("Pessoa02");
 		pj.setCnpj("25.456.854/0001-55");
-		pj.setRendaCnpj(2000);
+		pj.setRenda(3000);
+		pj.calcularDeducao();
 		
-		pf.setNome("amadeu");
-		pf.setCpf("95877458-65");
-		pf.setRendaCpf(3100);
+		pf.setNome("Pessoa01");
+		pf.setCpf("958557458-65");
+		pf.setRenda(3700);
+		pf.calcularDeducao();
+		
+		
 		
 		
 		System.out.println(pf);

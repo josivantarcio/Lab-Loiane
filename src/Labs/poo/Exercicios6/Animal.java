@@ -3,10 +3,14 @@ package Labs.poo.Exercicios6;
 public class Animal {
 	private String nome;
 	private double comprimento;
-	private int numPatas = 4;
+	private int numPatas; 
 	private String cor;
 	private String ambiente;
 	private double velocidade;
+	
+	public Animal() {
+		this.setNumPatas(4);
+	}
 	
 	public String getNome() {
 		return nome;
@@ -47,9 +51,15 @@ public class Animal {
 	
 	@Override
 	public String toString() {
-		return "Animais [nome=" + nome + ", comprimento=" + comprimento + ", numPatas=" + numPatas + ", cor=" + cor
-				+ ", ambiente=" + ambiente + ", velocidade=" + velocidade + "]";
+		String s = "Animal: " + nome;
+		s += "\nComprimento: " + comprimento;
+		s += "\nPatas: " + numPatas;
+		s += "\nCor: " + cor;
+		s += "\nAmbiente: " + ambiente;
+		s += "\nVelocidade: " + velocidade;
+		
+		
+		return s;
 	}
-	
 	
 }
